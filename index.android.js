@@ -12,9 +12,13 @@ var {
   View,
 } = React;
 
+//自定义组件
+var ToastModule = require('./component/ToastModule');
+ToastModule.show('React Native App Custom Componet', ToastModule.SHORT);
+
 var ImageText = require('./component/ImageText');
 
-var AwesomeProject = React.createClass({
+var ReactNativeApp = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
@@ -62,4 +66,4 @@ var styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('ReactNativeApp', () => AwesomeProject);
+AppRegistry.registerComponent('ReactNativeApp', () => ReactNativeApp);

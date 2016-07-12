@@ -2,7 +2,7 @@
     package="com.smart">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-sdk android:minSdkVersion="16"/>
     <application
       android:allowBackup="true"
       android:label="@string/app_name"
